@@ -486,7 +486,7 @@ hitungLuasSegitiga(12, 8);
 // Uji fungsi dengan 2 skenario:
 // 1. hitungTotalKoperasi("Azzam", 120000, true)
 // 2. hitungTotalKoperasi("Baim", 80000, false)
-let hitungTotalKoperasi = (namaPelanggan, totalBelanja, isMember) => {
+function hitungTotalKoperasi(namaPelanggan, totalBelanja, isMember) {
     let totalBayar;
 
     if (isMember === true && totalBelanja >= 100000) {
@@ -498,8 +498,7 @@ let hitungTotalKoperasi = (namaPelanggan, totalBelanja, isMember) => {
     }
 
     console.log(`Soal 7.5: Pelanggan: ${namaPelanggan} | Member: ${isMember} | Total Akhir: Rp ${totalBayar}`);
-};
-
+}
 hitungTotalKoperasi("Azzam", 120000, true);
 hitungTotalKoperasi("Baim", 80000, false);
 
